@@ -3,7 +3,9 @@
 ## 목차
 - [Introduction](#introduction)
 - [Overview of the Data](#overview-of-the-data)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Conclusion](#conclusion)
+
 
     <!-- * [Preprocess](#preprocess)
 <!-- - [Exploratory Data Analysis](#exploratory-data-analysis)
@@ -24,6 +26,7 @@
 ![](images/recency_frequency_segment_scatter.png)
 
 - RFM에 따라서 유저를 10가지 분류로 나누었다. 
+
 
 | index | name | references | 
 | --- | --- | --- |
@@ -75,23 +78,28 @@ RFM['segment'] = RFM['R'].astype(str) + RFM['F'].astype(str)
 RFM['segment'] = RFM['segment'].replace(segment_map, regex=True)
 ```
 
-# Conclusion
+# Exploratory Data Analysis
 
-![](images/country_most_transaction.png)
+![](images/country_most_transaction.png) (지도 그래프로 교체)
 ![](images/Country.png)
-![](images/Country_without_UK.png)
+![](images/EIRE_vs_all.png)
 
-- 전체 거래에서 가장 많은 국가는 첫번째는 Unitied Kingdom이고 두번째는 Germany
-    - 모든 RFM customer segment에서 첫번째는 Unitied Kingdom 이고,
-다른 segment는 전체와 같이 두번째 국가가 Germany 인데 New customers는 EIRE 이고 Loyal customers와 Potential loyalists는 France, Hibernating은 Greece. -> 이유?
+- 전체 거래에서 가장 많은 국가는 다섯 가지는 Unitied Kingdom, Germany, France, EIRE, Netherlands. 
+    - 모든 RFM customer segment에서 첫번째는 Unitied Kingdom 이다. 특이하게 Hibernating는 전체 다섯 국가 중에 없는 Greece가 두번째로 거래가 많은 국가. 
+    - (가장 많은 거래한 사람과 segment)
+
 
 ![](images/country_most_revenue.png)
 ![](images/country_most_average_revenue_per_paying_user.png)
+![](images/EIRE_vs_all.png)
 
-- 전체 Revenue가 가장 많은 국가는 Unitied Kingdom 이지만 유저당 평균 Revenue는 EIRE이다. -> 이유?
+- 전체 Revenue가 가장 많은 국가는 Unitied Kingdom 이지만 유저당 평균 Revenue는 EIRE이다.
+    - 전체의 유저당 평균 Revenue보다 EIRE의 유저당 평균 Revenue가 훨씬 높다.
+
 
 ![](images/date_analysis.png)
-- 가장 많은 거래가 일어난 달은 2011년 11월이다. 2009년을 제외하고 토요일에는 거래가 일어나지 않는다. 12시에 가장 많은 거래가 일어난다. 
+- 가장 많은 거래가 일어난 달은 2011년 11월이다. 9월부터 11월에 거래가 많은 것을 알 수 있다. 2009년을 제외하고 토요일에는 거래가 일어나지 않는다. 8시 부터 거래가 눈에 띄게 일어나기 시작하면서 점점 많아지다가 12시에 가장 많은 거래가 일어난다. 12시가 지나면 조금씩 줄어들다가 20시 이후에는 거래가 이루어지지 않는다. 
+
 
 ![](images/most_word.png)
 ![](images/most_common_word_by_segments.png)
@@ -99,3 +107,11 @@ RFM['segment'] = RFM['segment'].replace(segment_map, regex=True)
 ![](iamges/word_christmas_products_transactions(segments).png)
 - 제품에 가장 많이 등장한 단어 열가지는 bag, heart, set, design, retrospot, vintage, box, christmas, metal, pink 이다.
     - 모든 RFM customer segment에서 제품에 가장 많이 등장한 단어 다섯가지 공통적으로 bag, heart, set이 있고 Loyal customeers, Potetial loyalists, Champions에서 공통적으로 christmas가 보인다. 이는 christmas가 포함된 제품의 거래는 10월과 11월에 많이 이루어지는데 이와 같은 segment 에서도 10월과 11월 구매가 활발하게 일어났다는 것을 보여주고 있다. 
+
+
+# Conclusion
+
+To increase the market sales :
+- 9월 부터 11월까지 가장 거래가 많은데 이 시기에는 충성고객층(Loyal customeers, Potetial loyalists, Champions)의 christmas 관련 상품이 많이 구매하므로 이 고객층 대상으로 christmas 관련 프로모션 기획하여 세일즈를 올릴 수 있다. 
+- 토요일과 20시 부터 6시 전까지는 거래가 일어나지 않기 때문에 이 기간을
+- 대부분의 거래가 영국에서 이루어지기 때문에 다른 나라에서의 세일즈를 올리기 위해서 배송비 할인 프로모션 등을 기획할 수 있다.
