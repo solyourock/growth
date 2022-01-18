@@ -24,18 +24,18 @@
 ![](images/recency_frequency_segment_scatter.png)
 
 - RFM에 따라서 유저를 10가지 분류로 나누었다. 
-| name | references | 
-|--- | --- | 
-| Champions | Bought recently, buy often and spend the most | 
-| Loyal customers | Buy on a regular basis. Responsive to promotions | 
-| Potential loyalist | Recent customers with average frequency |
-| New customers | Bought most recently, but not often |
-| Promising | Recent shoppers, but haven’t spent much |
-| Needs attention | Above average recency, frequency and monetary values. May not have bought very recently though. |
-| About to sleep | Below average recency and frequency. Will lose them if not reactivated. | 
-| At risk | Some time since they’ve purchased. Need to bring them back! |
-| Can’t loose them | Used to purchase frequently but haven’t returned for a long time. |
-| Hibernating | Last purchase was long back and low number of orders. May be lost. |
+| index | name | references | 
+| --- | --- | --- |
+| 1 | Champions | Bought recently, buy often and spend the most | 
+| 2 | Loyal customers | Buy on a regular basis. Responsive to promotions | 
+| 3 | Potential loyalist | Recent customers with average frequency |
+| 4 | New customers | Bought most recently, but not often |
+| 5 | Promising | Recent shoppers, but haven’t spent much |
+| 6 | Needs attention | Above average recency, frequency and monetary values. May not have bought very recently though. |
+| 7 | About to sleep | Below average recency and frequency. Will lose them if not reactivated. | 
+| 8 | At risk | Some time since they’ve purchased. Need to bring them back! |
+| 9 | Can’t loose them | Used to purchase frequently but haven’t returned for a long time. |
+| 10 | Hibernating | Last purchase was long back and low number of orders. May be lost. |
 
 
 ``` python
@@ -77,7 +77,7 @@ RFM['segment'] = RFM['segment'].replace(segment_map, regex=True)
 # Conclusion
 
 ![](images/country_most_transaction.png)
-![](images/Country.png
+![](images/Country.png)
 ![](images/Country_without_UK.png)
 
 - 전체 거래에서 가장 많은 국가는 첫번째는 Unitied Kingdom이고 두번째는 Germany
