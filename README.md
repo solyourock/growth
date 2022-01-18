@@ -24,6 +24,7 @@
 ![](images/recency_frequency_segment_scatter.png)
 
 - RFM에 따라서 유저를 10가지 분류로 나누었다. 
+
 | index | name | references | 
 | --- | --- | --- |
 | 1 | Champions | Bought recently, buy often and spend the most | 
