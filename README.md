@@ -27,7 +27,7 @@
 
 - RFM에 따라서 유저를 10가지 분류로 나누었다. 
 
-
+<b>
 | index | name | references | 
 | --- | --- | --- |
 | 1 | Champions | Bought recently, buy often and spend the most | 
@@ -40,7 +40,7 @@
 | 8 | At risk | Some time since they’ve purchased. Need to bring them back! |
 | 9 | Can’t loose them | Used to purchase frequently but haven’t returned for a long time. |
 | 10 | Hibernating | Last purchase was long back and low number of orders. May be lost. |
-
+</b>
 
 ``` python
 # 기준 날짜 : 2011년 12월 10일 -> 가장 마지막 거래가 이루어진 날짜가 2011년 12월 9일이기 때문
