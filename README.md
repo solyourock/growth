@@ -14,13 +14,14 @@
     * [Feature Importances](#feature-importances)
     * [Learning Curve](#learning-curve)
     * [Confusion Matrix](#confusion-matrix)
-- [Retrospect](#retrospect) --> -->
+- [Retrospect](#retrospect) -->
+
 
 # Introduction
 # Overview of the Data
 
-![](images/RFM Segments.png)
-![](images/recency frequency segment scatter.png)
+![](images/RFM_Segments.png)
+![](images/recency_frequency_segment_scatter.png)
 
 - RFM에 따라서 유저를 10가지 분류로 나누었다.  
 |--- | --- | 
@@ -74,25 +75,25 @@ RFM['segment'] = RFM['segment'].replace(segment_map, regex=True)
 
 # Conclusion
 
-![](images/country most transaction.png)
+![](images/country_most_transaction.png)
 ![](images/Country.png
-![](images/Country without UK.png)
+![](images/Country_without_UK.png)
 
 - 전체 거래에서 가장 많은 국가는 첫번째는 Unitied Kingdom이고 두번째는 Germany
     - 모든 RFM customer segment에서 첫번째는 Unitied Kingdom 이고,
 다른 segment는 전체와 같이 두번째 국가가 Germany 인데 New customers는 EIRE 이고 Loyal customers와 Potential loyalists는 France, Hibernating은 Greece. -> 이유?
 
-![](images/country most revenue.png)
-![](images/country most average revenue per paying user.png)
+![](images/country_most_revenue.png)
+![](images/country_most_average_revenue_per_paying_user.png)
 
 - 전체 Revenue가 가장 많은 국가는 Unitied Kingdom 이지만 유저당 평균 Revenue는 EIRE이다. -> 이유?
 
-![](images/date analysis.png)
+![](images/date_analysis.png)
 - 가장 많은 거래가 일어난 달은 2011년 11월이다. 2009년을 제외하고 토요일에는 거래가 일어나지 않는다. 12시에 가장 많은 거래가 일어난다. 
 
-![](images/most word.png)
-![](images/most common word by segments.png)
-![](images/word christmas products transactions.png)
-![](iamges/word christmas products transactions(segments).png)
+![](images/most_word.png)
+![](images/most_common_word_by_segments.png)
+![](images/word_christmas_products_transactions.png)
+![](iamges/word_christmas_products_transactions(segments).png)
 - 제품에 가장 많이 등장한 단어 열가지는 bag, heart, set, design, retrospot, vintage, box, christmas, metal, pink 이다.
     - 모든 RFM customer segment에서 제품에 가장 많이 등장한 단어 다섯가지 공통적으로 bag, heart, set이 있고 Loyal customeers, Potetial loyalists, Champions에서 공통적으로 christmas가 보인다. 이는 christmas가 포함된 제품의 거래는 10월과 11월에 많이 이루어지는데 이와 같은 segment 에서도 10월과 11월 구매가 활발하게 일어났다는 것을 보여주고 있다. 
