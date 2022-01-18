@@ -27,7 +27,6 @@
 
 - RFM에 따라서 유저를 10가지 분류로 나누었다. 
 
-<b>
 | index | name | references | 
 | --- | --- | --- |
 | 1 | Champions | Bought recently, buy often and spend the most | 
@@ -40,7 +39,7 @@
 | 8 | At risk | Some time since they’ve purchased. Need to bring them back! |
 | 9 | Can’t loose them | Used to purchase frequently but haven’t returned for a long time. |
 | 10 | Hibernating | Last purchase was long back and low number of orders. May be lost. |
-</b>
+
 
 ``` python
 # 기준 날짜 : 2011년 12월 10일 -> 가장 마지막 거래가 이루어진 날짜가 2011년 12월 9일이기 때문
@@ -104,7 +103,7 @@ RFM['segment'] = RFM['segment'].replace(segment_map, regex=True)
 ![](images/most_word.png)
 ![](images/most_common_word_by_segments.png)
 ![](images/word_christmas_products_transactions.png)
-![](iamges/word_christmas_products_transactions(segments).png)
+![](images/word_christmas_products_transactions(segments).png)
 - 제품에 가장 많이 등장한 단어 열가지는 bag, heart, set, design, retrospot, vintage, box, christmas, metal, pink 이다.
     - 모든 RFM customer segment에서 제품에 가장 많이 등장한 단어 다섯가지 공통적으로 bag, heart, set이 있고 Loyal customeers, Potetial loyalists, Champions에서 공통적으로 christmas가 보인다. 이는 christmas가 포함된 제품의 거래는 10월과 11월에 많이 이루어지는데 이와 같은 segment 에서도 10월과 11월 구매가 활발하게 일어났다는 것을 보여주고 있다. 
 
@@ -118,7 +117,7 @@ RFM['segment'] = RFM['segment'].replace(segment_map, regex=True)
 # Conclusion
 
 To increase the market sales :
-- 9월 부터 11월까지 가장 거래가 많은데 이 시기에는 Loyal customeers, Potetial loyalists, Champions이 christmas 관련 상품이 많이 구매하므로 이 고객층 대상으로 christmas 관련 프로모션 기획하여 세일즈를 올릴 수 있다. 
+- 9월 부터 11월까지 가장 거래가 많은데 이 시기에는 Loyal customers, Potential loyalists, Champions이 christmas 관련 상품이 많이 구매하므로 이 고객층 대상으로 christmas 관련 프로모션 기획하여 세일즈를 올릴 수 있다. 
 - 토요일과 20시 부터 6시 전까지는 거래가 일어나지 않기 때문에 이 기간을
 - 대부분의 거래가 영국에서 이루어지기 때문에 다른 나라에서의 세일즈를 올리기 위해서 배송비 할인 프로모션 등을 기획할 수 있다.
 - 토요일과 20시 부터 6시 전까지는 거래가 일어나지 않기 때문에 이 기간
