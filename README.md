@@ -96,7 +96,7 @@ RFM['segment'] = RFM['segment'].replace(segment_map, regex=True)
 3. 첫 구매가 상대적으로 적은 7월과 8월에 대대적으로 프로모션을 기획하여 구매를 일으켜서 고객으로 만들어야한다.![](images/conclusion3.png)
 
 
-4. 전체 고객에서 at risk, potential loyal, loyal customers, can't loose them, new customers가 가장 많은 비율을 차지하고 있다. 그 중에서도 new customers가 가장 많은 revenue를 차지하고 있는 고객층이기 때문에 new customers를 안정적인 충성 고객으로 만들어야 한다. 그러기 위해서는 빠른 시일 내에 다시 구매를 하게 만들어서 전체 구매력을 올려야 한다. ![](image/conclusion4.png)
+4. 전체 고객에서 at risk, potential loyal, loyal customers, can't loose them, new customers가 가장 많은 비율을 차지하고 있다. 그 중에서도 new customers가 가장 많은 revenue를 차지하고 있는 고객층이기 때문에 new customers를 안정적인 충성 고객으로 만들어야 한다. 그러기 위해서는 빠른 시일 내에 다시 구매를 하게 만들어서 전체 구매력을 올려야 한다. ![](images/conclusion4.png)
 
  
 5. 1월에 첫 구매를 한 고객들의 retention은 유독 좋은 편이기 때문에 다가오는 1월에 더 많은 고객들이 첫 구매를 할 수 있게 유도해야 한다.![](images/conclusion5.png)
