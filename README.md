@@ -2,8 +2,7 @@
 - [Introduction](#introduction)
 - [Overview of the Data](#overview-of-the-data)
 	* [Preprocessing](#preprocessing)
-- [Exploratory Data Analysis](#exploratory_data_analysis) 
-
+- [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Conclusion](#conclusion)
 - [References](#references)
 
@@ -91,7 +90,6 @@ segment_map = {
 RFM['segment'] = RFM['R'].astype(str) + RFM['F'].astype(str)
 RFM['segment'] = RFM['segment'].replace(segment_map, regex=True)
 ```
-
 # Exploratory Data Analysis
 
 자세한 EDA 과정은 블로그에서 볼 수 있다.<br>
