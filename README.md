@@ -87,10 +87,10 @@ RFM['segment'] = RFM['R'].astype(str) + RFM['F'].astype(str)
 RFM['segment'] = RFM['segment'].replace(segment_map, regex=True)
 ```
 
-# Exploratory Data Analysis
+# Exploratory Data Analysiss
 
-자세한 EDA 과정은 블로그에서 볼 수 있다. 
-https://velog.io/@dataone/Project-E-Commerce-Customer-segmentationRFM-analysis를-이용해서-매출-올리기
+자세한 EDA 과정은 블로그에서 볼 수 있다.<br>
+https://velog.io/@dataone/Project-E-Commerce-Customer-segmentationRFM-analysis를-이용해서-매출-올리기</br>
 
 
 # Conclusion
@@ -110,7 +110,7 @@ https://velog.io/@dataone/Project-E-Commerce-Customer-segmentationRFM-analysis�
 5. 1월에 첫 구매를 한 고객들의 retention은 유독 좋은 편이기 때문에 다가오는 1월에 더 많은 고객들이 첫 구매를 할 수 있게 유도해야 한다.![](images/conclusion5.png)
 
 
-- United Kingdom에서 가장 많이 구매를 하며 9월부터 11월에 가장 많은 구매를 한다. 1월에 첫 구매를 한 고객들의 retention은 유독 좋은 편이며 상대적으로 7월과 8월에는 상대적으로 첫 구매가 적게 일어난다. 전체 고객층에서 new customers가 가장 많은 revenue를 차지하고 있는 고객층이라 중요하다고 여겼고 이들을 충성 고객으로 만들어야 한다.
+- United Kingdom에서 가장 많이 구매를 하며 9월부터 11월에 가장 많은 구매를 한다.<br>1월에 첫 구매를 한 고객들의 retention은 유독 좋은 편이며 상대적으로 7월과 8월에는 상대적으로 첫 구매가 적게 일어난다.</br>전체 고객층에서 new customers가 가장 많은 revenue를 차지하고 있는 고객층이라 중요하다고 여겼고 이들을 충성 고객으로 만들어야 한다.
 
 
 # References
