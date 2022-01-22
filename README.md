@@ -92,7 +92,7 @@ RFM['segment'] = RFM['R'].astype(str) + RFM['F'].astype(str)
 RFM['segment'] = RFM['segment'].replace(segment_map, regex=True)
 ```
 
-# Exploratory Data Analysiss
+# Exploratory Data Analysis
 
 자세한 EDA 과정은 블로그에서 볼 수 있다.<br>
 https://velog.io/@dataone/Project-E-Commerce-Customer-segmentationRFM-analysis를-이용해서-매출-올리기</br>
